@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <title>محادثة AI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body {
+        background-color: #000016;
+      }
+      #chat {
+        background-color: #b9b4b42c;
+        height: 60vh;
+        width: 100%;
+        overflow: auto;
+        
+        color: white;
+        margin-top: 30px;
+        padding: 10px;
+        font-family: sans-serif;
+        border-radius: 30px;
+        border: 2px solid #b9b4b42c;
+        display: flex;
+        flex-direction: column;
+      }
+        #chat::-webkit-scrollbar{
+display: none;
+        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+      }
+      input {
+        background-color: transparent;
+        border: 0;
+        width: 100%;
+        outline: 0;
+        color: white;
+        padding-left: 10px;
+     
+      }
+      .input {
+width: 100%;
+        display: flex;
+        margin-top: 20px;
+        background-color: #b9b4b42c;
+
+        border: 2px solid #b9b4b42c;
+        border-radius: 30px;
+        overflow: hidden;
+        padding: 10px;
+      }
+      button {
+        background-color: #000016;
+        border: 0;
+        color: white;
+        width: 100px;
+        padding: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+      .msg{
+
+        background-color: rgba(255, 255, 255, 0.136);
+        margin-top: 20px;
+        border-radius: 10px;
+        padding: 10px;
+
+      }
+      .bot{
+        margin-bottom: 10px;
+  background-color: rgba(11, 189, 11, 0.149);
+    }
+      .user{
+        direction: rtl;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="chat">
+        <div class="msg bot">👋hello ask me</div>
+      </div>
+      <div class="input">
+        <input
+          type="text"
+          id="msgInput"
+          placeholder="enter your message..."
+          style="width: 80%"
+        />
+        <button onclick="sendMessage()">send <i class="fa-solid fa-paper-plane"></i></button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
